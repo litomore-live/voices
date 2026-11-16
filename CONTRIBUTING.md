@@ -84,4 +84,6 @@ npm run preview
 
 分享封面位于 `site/assets/og-image.png`，尺寸为 1200 × 630；OpenGraph 和 Twitter 分享卡片使用 PNG，README 使用无损压缩的 `site/assets/readme-cover.webp`。生成提示词保存在 `site/og-image.prompt.txt`。构建会将 `site/assets/` 复制到 `dist/assets/`。OpenGraph、Twitter 分享卡片和 canonical 地址在 `site/template.html` 中维护；更换域名时需同步更新其中的绝对 URL。
 
+首屏角色使用从分享封面提取的透明背景图片 `site/assets/hero-character.webp`，尺寸为 800 × 800；编辑提示词保存在 `site/hero-character.prompt.txt`。角色、播放器与贴纸的布局由 `site/styles.css` 维护。
+
 `.github/workflows/pages.yml` 会在推送 `main` 后构建并部署到 GitHub Pages，也支持手动触发。仓库 Pages 的 Source 需设为 GitHub Actions。所有站内资源均使用相对路径，支持 `/voices/` 项目路径。
