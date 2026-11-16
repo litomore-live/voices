@@ -4,7 +4,7 @@
 
 <p align="center">给你发的弹幕挑个喜欢的声音。</p>
 
-<p align="center"><strong><a href="https://litomore-live.github.io/voices/">打开声音选择页 ↗</a></strong></p>
+<p align="center"><strong><a href="https://voices.litomore.me">打开声音选择页 ↗</a></strong></p>
 
 共 18 个音色，前往声音选择页试听，选好后把音色名字告诉主播，主播会用这个音色读出你发的弹幕。包含 Siri 普通话、台湾口音和粤语声音。
 
