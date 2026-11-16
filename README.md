@@ -1,8 +1,10 @@
-# Voices ♡
+[![Voices ♡：你的弹幕，你来选声音。粉紫色像素 anime 角色与声波播放器。](site/assets/readme-cover.webp)](https://litomore-live.github.io/voices/)
 
-给你发的弹幕挑个喜欢的声音。
+<h1 align="center">Voices ♡</h1>
 
-**[打开声音选择页 ↗](https://litomore-live.github.io/voices/)**
+<p align="center">给你发的弹幕挑个喜欢的声音。</p>
+
+<p align="center"><strong><a href="https://litomore-live.github.io/voices/">打开声音选择页 ↗</a></strong></p>
 
 共 18 个音色，前往声音选择页试听，选好后把音色名字告诉主播，主播会用这个音色读出你发的弹幕。包含 Siri 普通话、台湾口音和粤语声音。
 
@@ -31,6 +33,6 @@
 
 工具使用和维护说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-## License
+<h2 align="center">License</h2>
 
-MIT
+<p align="center">MIT</p>

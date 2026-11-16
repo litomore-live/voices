@@ -1,0 +1,21 @@
+Generated with the built-in image_gen tool.
+The selected image is resized to 1200 × 630 for site/assets/og-image.png.
+README uses a lossless WebP copy at site/assets/readme-cover.webp,
+converted with: cwebp -lossless -m 6 site/assets/og-image.png -o site/assets/readme-cover.webp
+
+Use case: ads-marketing
+Asset type: final OpenGraph social sharing cover for the website "voices", an audio voice picker for livestream chat.
+Primary request: a beautifully art-directed e-girl dopamine-color videogame pixel anime cover that matches the existing playful website.
+Canvas: landscape 1200 x 630, aspect ratio 1.9048:1. Full bleed finished cover, no outer mockup, no photographed device.
+Palette: warm almost-white #fff8ff base, deep ink #28163e, bubblegum hot pink #ff5bbd, saturated purple #7745f5, mint cyan #a0f6e5, tiny butter-yellow accents. Light overall, vivid confident accents.
+Composition: intentional graphic poster layout. Left 55% is large, wonderfully readable typographic hierarchy. Right 45% is a richly drawn pixel anime portrait of a friendly adult e-girl streamer wearing large pink headphones and a lavender oversized sweater, purple hair, expressive face, facing slightly inward; a compact mint-and-pink retro audio player with a bright waveform in front of her. Pixel heart speech bubble, a few pixel sparkles and small checkerboard accents tie the composition together. Avoid crowding. Important elements have generous safe margins (60 px).
+Style/medium: authentic crisp 16/32-bit Japanese videogame pixel art with visible square pixel clusters, stepped outlines and limited-color pixel shading. The anime portrait should be detailed and charming like a premium pixel game key visual. Everything including borders, hearts, sparkles, and lettering feels like a single polished game title screen. Flat graphic hierarchy, chunky dark outlines, offset pixel shadows. No smooth 3D, no photorealism, no blurry pixel filters, no gradients.
+Text (verbatim, no extra writing):
+Top left small pixel label: "YOUR VOICE, YOUR VIBE"
+Left center very large bold lowercase title: "voices" with a pixel outline heart immediately beside it.
+Below the title, large legible Chinese in two lines:
+"你的弹幕，"
+"你来选声音"
+Set the second Chinese line against a hot-pink rectangular highlight with a small stepped pixel shadow. Keep Chinese strokes correct and uncrowded. Logo is the main hierarchy; supporting Chinese is comfortably readable in a small link preview.
+A small mint pixel badge near the audio player reads "SOUND ON!"
+Constraints: one single landscape cover. Text exactly as specified. Readable even reduced to a 600px wide social preview. No browser UI, no URL, no watermarks, no extra copy, no sexualization.

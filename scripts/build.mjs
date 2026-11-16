@@ -40,6 +40,7 @@ await Promise.all([
   ...voices.map(voice => cp(new URL(voice.audio, root), new URL(`dist/${voice.audio}`, root))),
   cp(new URL('site/styles.css', root), new URL('dist/styles.css', root)),
   cp(new URL('site/player.js', root), new URL('dist/player.js', root)),
+  cp(new URL('site/assets/', root), new URL('dist/assets/', root), { recursive: true }),
   writeFile(new URL('dist/voices.json', root), JSON.stringify(voices, null, 2) + '\n'),
   writeFile(new URL('dist/.nojekyll', root), ''),
 ]);
