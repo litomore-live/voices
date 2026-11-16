@@ -66,7 +66,7 @@ npm run check
 
 音质保存在 `quality`（`standard` / `enhanced` / `premium`），方言保存在 `dialect`。页面和 README 共用排序：大陆 → 台湾 → 香港；地区内按音色的英文名称排列，同名优先 Premium → Enhanced → Standard。
 
-方言按采集到的系统语言代码标注：`zh_CN` 为普通话，`zh_TW` 为台湾国语，`zh_HK` 为粤语；`cnln`、`cnsn`、`cnsc` 分别标为东北话（辽宁）、陕西话、四川话。地区细分来自本机 `say -v '?'` 的 locale；参考 [Apple 的语音语言列表](https://support.apple.com/en-asia/111748) 和 [功能可用性](https://www.apple.com/macos/feature-availability/)。质量分级保留系统名称中的 Enhanced / Premium 信息，未带后缀的条目在本目录中标为标准版。
+方言按采集到的系统语言代码标注：`zh_CN` 为普通话，`zh_TW` 为台湾口音，`zh_HK` 为粤语；`cnln`、`cnsn`、`cnsc` 分别标为东北话（辽宁）、陕西话、四川话。地区细分来自本机 `say -v '?'` 的 locale；参考 [Apple 的语音语言列表](https://support.apple.com/en-asia/111748) 和 [功能可用性](https://www.apple.com/macos/feature-availability/)。质量分级保留系统名称中的 Enhanced / Premium 信息，未带后缀的条目在本目录中标为标准版。
 
 ```sh
 npm ci

@@ -6,8 +6,8 @@ export const SERIES = [{ id: 'siri', label: 'Siri' }];
 export const seriesOf = voice => ({ id: voice.id.startsWith('siri-') ? 'siri' : 'other' });
 export const REGIONS = [
   { id: 'mainland', label: '大陆' },
-  { id: 'taiwan', label: '台湾' },
   { id: 'hongkong', label: '香港' },
+  { id: 'taiwan', label: '台湾' },
 ];
 export const QUALITIES = [
   { id: 'standard', label: '标准版', english: 'Standard', rank: 0 },
@@ -19,17 +19,22 @@ export const DIALECTS = [
   { id: 'northeastern', label: '东北话（辽宁）' },
   { id: 'shaanxi', label: '陕西话' },
   { id: 'sichuan', label: '四川话' },
-  { id: 'taiwan-mandarin', label: '台湾国语' },
   { id: 'cantonese', label: '粤语' },
+  { id: 'taiwan-mandarin', label: '台湾口音' },
 ];
 export function regionOf(voice) {
-  return REGIONS[voice.locale === 'zh_TW' ? 1 : voice.locale === 'zh_HK' ? 2 : 0];
+  const id = voice.locale === 'zh_TW' ? 'taiwan' : voice.locale === 'zh_HK' ? 'hongkong' : 'mainland';
+  return REGIONS.find(region => region.id === id);
 }
 export const qualityOf = voice => QUALITIES.find(quality => quality.id === voice.quality);
 export const dialectOf = voice => DIALECTS.find(dialect => dialect.id === voice.dialect);
 const byName = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
 export function sortVoices(voices) {
   return [...voices].sort((a, b) =>
+    DIALECTS.indexOf(dialectOf(a)) - DIALECTS.indexOf(dialectOf(b)) ||
+    Number(seriesOf(b).id === 'siri') - Number(seriesOf(a).id === 'siri') ||
+    (seriesOf(a).id === 'siri' && seriesOf(b).id === 'siri'
+      ? byName.compare(b.name.split(' (')[0], a.name.split(' (')[0]) : 0) ||
     REGIONS.indexOf(regionOf(a)) - REGIONS.indexOf(regionOf(b)) ||
     byName.compare(a.name.split(' (')[0], b.name.split(' (')[0]) ||
     qualityOf(b).rank - qualityOf(a).rank ||
