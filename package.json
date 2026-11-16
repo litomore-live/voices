@@ -3,10 +3,21 @@
   "private": true,
   "license": "MIT",
   "type": "module",
+  "exports": "./src/index.js",
+  "bin": {
+    "voices": "./bin/voices.mjs"
+  },
   "scripts": {
+    "voices": "node bin/voices.mjs --voices",
+    "test": "node --test",
     "generate": "node scripts/generate-readme.mjs",
     "build": "node scripts/build.mjs",
     "preview": "python3 -m http.server 8766 --directory dist --bind 127.0.0.1"
   },
-  "engines": { "node": ">=24" }
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "native-say": "0.0.4"
+  }
 }

@@ -9,7 +9,8 @@
     "displayName": "彬彬",
     "duration": 6.494167,
     "quality": "enhanced",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.voice.enhanced.zh-CN.Binbin"
   },
   {
     "id": "dongmei-enhanced",
@@ -21,7 +22,8 @@
     "displayName": "冬梅",
     "duration": 7.063,
     "quality": "enhanced",
-    "dialect": "northeastern"
+    "dialect": "northeastern",
+    "identifier": "com.apple.voice.enhanced.zh-CN-u-sd-cnln.Dongmei"
   },
   {
     "id": "eddy-chinese-china-mainland",
@@ -33,7 +35,8 @@
     "displayName": "Eddy",
     "duration": 7.664333,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Eddy"
   },
   {
     "id": "eddy-chinese-taiwan",
@@ -45,7 +48,8 @@
     "displayName": "Eddy",
     "duration": 7.086208,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Eddy"
   },
   {
     "id": "panpan-premium",
@@ -57,7 +61,8 @@
     "displayName": "盼盼",
     "duration": 8.363458,
     "quality": "premium",
-    "dialect": "sichuan"
+    "dialect": "sichuan",
+    "identifier": "com.apple.voice.premium.zh-CN-u-sd-cnsc.Fangfang"
   },
   {
     "id": "flo-chinese-china-mainland",
@@ -69,7 +74,8 @@
     "displayName": "Flo",
     "duration": 7.618083,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Flo"
   },
   {
     "id": "flo-chinese-taiwan",
@@ -81,7 +87,8 @@
     "displayName": "Flo",
     "duration": 7.039917,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Flo"
   },
   {
     "id": "grandma-chinese-china-mainland",
@@ -93,7 +100,8 @@
     "displayName": "Grandma",
     "duration": 7.803,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Grandma"
   },
   {
     "id": "grandma-chinese-taiwan",
@@ -105,7 +113,8 @@
     "displayName": "Grandma",
     "duration": 7.225958,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Grandma"
   },
   {
     "id": "grandpa-chinese-china-mainland",
@@ -117,7 +126,8 @@
     "displayName": "Grandpa",
     "duration": 7.8955,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Grandpa"
   },
   {
     "id": "grandpa-chinese-taiwan",
@@ -129,7 +139,8 @@
     "displayName": "Grandpa",
     "duration": 7.305833,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Grandpa"
   },
   {
     "id": "haohao-enhanced",
@@ -141,7 +152,8 @@
     "displayName": "浩浩",
     "duration": 6.319792,
     "quality": "enhanced",
-    "dialect": "shaanxi"
+    "dialect": "shaanxi",
+    "identifier": "com.apple.voice.enhanced.zh-CN-u-sd-cnsn.Haohao"
   },
   {
     "id": "lilian-premium",
@@ -153,7 +165,8 @@
     "displayName": "黎潋",
     "duration": 7.322042,
     "quality": "premium",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.voice.premium.zh-CN.Lilian"
   },
   {
     "id": "meijia-chinese-taiwan",
@@ -165,7 +178,8 @@
     "displayName": "美佳",
     "duration": 7.089958,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.voice.compact.zh-TW.Meijia"
   },
   {
     "id": "reed-chinese-china-mainland",
@@ -177,7 +191,8 @@
     "displayName": "Reed",
     "duration": 7.618083,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Reed"
   },
   {
     "id": "reed-chinese-taiwan",
@@ -189,7 +204,8 @@
     "displayName": "Reed",
     "duration": 7.028375,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Reed"
   },
   {
     "id": "rocko-chinese-china-mainland",
@@ -201,7 +217,8 @@
     "displayName": "Rocko",
     "duration": 7.837625,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Rocko"
   },
   {
     "id": "rocko-chinese-taiwan",
@@ -213,7 +230,8 @@
     "displayName": "Rocko",
     "duration": 7.259458,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Rocko"
   },
   {
     "id": "sandy-chinese-china-mainland",
@@ -225,7 +243,8 @@
     "displayName": "Sandy",
     "duration": 7.698792,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Sandy"
   },
   {
     "id": "sandy-chinese-taiwan",
@@ -237,7 +256,8 @@
     "displayName": "Sandy",
     "duration": 7.13225,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Sandy"
   },
   {
     "id": "shelley-chinese-china-mainland",
@@ -249,7 +269,8 @@
     "displayName": "Shelley",
     "duration": 7.722042,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.eloquence.zh-CN.Shelley"
   },
   {
     "id": "shelley-chinese-taiwan",
@@ -261,7 +282,8 @@
     "displayName": "Shelley",
     "duration": 7.143917,
     "quality": "standard",
-    "dialect": "taiwan-mandarin"
+    "dialect": "taiwan-mandarin",
+    "identifier": "com.apple.eloquence.zh-TW.Shelley"
   },
   {
     "id": "sinji",
@@ -273,7 +295,8 @@
     "displayName": "善怡",
     "duration": 7.629583,
     "quality": "standard",
-    "dialect": "cantonese"
+    "dialect": "cantonese",
+    "identifier": "com.apple.voice.super-compact.zh-HK.Sinji"
   },
   {
     "id": "tingting-chinese-china-mainland",
@@ -285,7 +308,8 @@
     "displayName": "婷婷",
     "duration": 7.390333,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.voice.compact.zh-CN.Tingting"
   },
   {
     "id": "wing-premium",
@@ -297,7 +321,8 @@
     "displayName": "Wing",
     "duration": 7.203708,
     "quality": "premium",
-    "dialect": "cantonese"
+    "dialect": "cantonese",
+    "identifier": "com.apple.voice.premium.zh-HK.Wing"
   },
   {
     "id": "yu-shu",
@@ -309,7 +334,8 @@
     "displayName": "Yu-Shu",
     "duration": 7.549167,
     "quality": "standard",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.ttsbundle.siri_Yu-Shu_zh-CN_compact"
   },
   {
     "id": "yu-shu-enhanced",
@@ -321,7 +347,8 @@
     "displayName": "Yu-Shu",
     "duration": 7.031333,
     "quality": "enhanced",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.ttsbundle.siri_Yu-Shu_zh-CN_premium"
   },
   {
     "id": "yue-premium",
@@ -333,7 +360,8 @@
     "displayName": "月",
     "duration": 7.163458,
     "quality": "premium",
-    "dialect": "mandarin"
+    "dialect": "mandarin",
+    "identifier": "com.apple.voice.premium.zh-CN.Yue"
   },
   {
     "id": "yun-premium",
@@ -345,6 +373,85 @@
     "displayName": "Yun",
     "duration": 6.810625,
     "quality": "premium",
+    "dialect": "mandarin",
+    "identifier": "com.apple.voice.premium.zh-CN.Yun"
+  },
+  {
+    "id": "siri-zh-cn-2",
+    "name": "Siri Voice 2 (zh-CN)",
+    "identifier": "com.apple.ttsbundle.gryphon-neural_Linfei_zh-CN_premium",
+    "locale": "zh_CN",
+    "greeting": "你好！我是 Siri 2 号声音。",
+    "text": "你好！我是 Siri 2 号声音。欢迎来到直播间。今天天气晴朗，很高兴认识你。",
+    "audio": "audio/siri-zh-cn-2.mp3",
+    "displayName": "Siri 2",
+    "duration": 6.723167,
+    "quality": "enhanced",
     "dialect": "mandarin"
+  },
+  {
+    "id": "siri-zh-cn-3",
+    "name": "Siri Voice 3 (zh-CN)",
+    "identifier": "com.apple.ttsbundle.gryphon-neural_zh-CN-C_zh-CN_premium",
+    "locale": "zh_CN",
+    "greeting": "你好！我是 Siri 3 号声音。",
+    "text": "你好！我是 Siri 3 号声音。欢迎来到直播间。今天天气晴朗，很高兴认识你。",
+    "audio": "audio/siri-zh-cn-3.mp3",
+    "displayName": "Siri 3",
+    "duration": 6.481958,
+    "quality": "enhanced",
+    "dialect": "mandarin"
+  },
+  {
+    "id": "siri-zh-cn-4-natural",
+    "name": "Siri Voice 4 (zh-CN, Natural)",
+    "identifier": "com.apple.siri.natural.zh-CN-D",
+    "locale": "zh_CN",
+    "greeting": "你好！我是 Siri 4 号声音。",
+    "text": "你好！我是 Siri 4 号声音。欢迎来到直播间。今天天气晴朗，很高兴认识你。",
+    "audio": "audio/siri-zh-cn-4-natural.mp3",
+    "displayName": "Siri 4（Natural）",
+    "duration": 7.076542,
+    "quality": "enhanced",
+    "dialect": "mandarin"
+  },
+  {
+    "id": "siri-zh-tw-2",
+    "name": "Siri Voice 2 (zh-TW)",
+    "identifier": "com.apple.ttsbundle.gryphon-neural_Shufen_zh-TW_premium",
+    "locale": "zh_TW",
+    "greeting": "你好！我是 Siri 2 号声音。",
+    "text": "你好！我是 Siri 2 号声音。欢迎来到直播间。今天天气晴朗，很高兴认识你。",
+    "audio": "audio/siri-zh-tw-2.mp3",
+    "displayName": "Siri 2",
+    "duration": 7.701333,
+    "quality": "enhanced",
+    "dialect": "taiwan-mandarin"
+  },
+  {
+    "id": "siri-yue-hk-1",
+    "name": "Siri Voice 1 (yue-HK)",
+    "identifier": "com.apple.ttsbundle.gryphon-neural_Hoyin_zh-HK_premium",
+    "locale": "zh_HK",
+    "greeting": "你好！我是 Siri 1 号声音。",
+    "text": "你好！我係 Siri 1 號聲音。歡迎嚟到直播間，好高興認識你，今日過得點呀？",
+    "audio": "audio/siri-yue-hk-1.mp3",
+    "displayName": "Siri 1",
+    "duration": 7.074917,
+    "quality": "enhanced",
+    "dialect": "cantonese"
+  },
+  {
+    "id": "siri-yue-hk-2",
+    "name": "Siri Voice 2 (yue-HK)",
+    "identifier": "com.apple.ttsbundle.gryphon-neural_Kayan_zh-HK_premium",
+    "locale": "zh_HK",
+    "greeting": "你好！我是 Siri 2 号声音。",
+    "text": "你好！我係 Siri 2 號聲音。歡迎嚟到直播間，好高興認識你，今日過得點呀？",
+    "audio": "audio/siri-yue-hk-2.mp3",
+    "displayName": "Siri 2",
+    "duration": 6.299042,
+    "quality": "enhanced",
+    "dialect": "cantonese"
   }
 ]
