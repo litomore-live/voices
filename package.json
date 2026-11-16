@@ -1,0 +1,12 @@
+{
+  "name": "voices",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-readme.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 8766 --directory dist --bind 127.0.0.1"
+  },
+  "engines": { "node": ">=24" }
+}

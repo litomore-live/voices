@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="给直播间挑一个喜欢的声音。点一下，听一听，找到你的心动音色。">
+  <meta name="theme-color" content="#ff5bbd">
+  <title>Voices ♡ 选个心动的声音</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23ff5bbd'/%3E%3Ctext x='7' y='37' font-size='38' fill='%23251a40'%3E♥%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="player.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">voices<span aria-hidden="true">♡</span></a>
+    <span class="header-note"><span class="tiny-star" aria-hidden="true">✦</span> 给直播间加点声音</span>
+    <a class="header-button" href="#voices">去选声音 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span aria-hidden="true">♥</span> YOUR VOICE, YOUR VIBE</span>
+        <h1 id="hero-title">今天，想用<br><span>哪种声音？<svg class="title-star" viewBox="0 0 64 64" aria-hidden="true"><path d="m32 0 8 24 24 8-24 8-8 24-8-24L0 32l24-8Z"/></svg></span></h1>
+        <p>可爱一点，特别一点，随你喜欢。<br>点一下听听，选好就告诉主播 ♡</p>
+        <a class="hero-button" href="#voices">找到我的声音 <span aria-hidden="true">↓</span></a>
+        <span class="hero-caption">{{COUNT}} 个声音 · 等你翻牌</span>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit-star">✦</div>
+        <div class="sticker sticker-top">SOUND ON!</div>
+        <div class="sound-window">
+          <div class="window-bar"><span>♡ voice crush.exe</span><span>— &nbsp; □ &nbsp; ×</span></div>
+          <div class="window-screen"><span class="screen-label">FIND YOUR FREQUENCY</span><div class="big-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="screen-heart">♡</span><div class="screen-baseline"><span>GOOD VIBES ONLY</span><span>VOL. 100%</span></div></div>
+          <div class="window-bottom"><span class="fake-play">▶</span><div class="fake-track"><span></span></div><span>SOUND ON ♡</span></div>
+        </div>
+        <div class="sticker sticker-bottom">听见喜欢的你 <span>♡</span></div>
+        <div class="doodle-heart">♥</div>
+      </div>
+    </section>
+    <div class="ribbon" aria-hidden="true"><span>PICK A VOICE</span><b>✦</b><span>MAKE IT YOURS</span><b>♡</b><span>SOUND CHECK</span><b>✦</b><span>PICK A VOICE</span><b>♡</b><span>MAKE IT YOURS</span></div>
+    <section class="voice-section" id="voices" aria-labelledby="voices-title">
+      <div class="section-heading"><div><span class="eyebrow">THE VOICE COLLECTION</span><h2 id="voices-title">来，翻个牌 <span aria-hidden="true">↘</span></h2></div><span class="count-sticker">{{COUNT}} VOICES ♡</span></div>
+      <div class="toolbar">
+        <div class="filter-row"><span class="filter-title" id="region-label">地区</span><div class="filters" role="group" aria-labelledby="region-label"><!-- FILTER_REGION --></div></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="找找熟悉的名字…" aria-label="搜索音色名字" autocomplete="off"></label>
+      </div>
+      <div class="filter-panel">
+        <div class="filter-row"><span class="filter-title" id="quality-label">音质</span><div class="filters" role="group" aria-labelledby="quality-label"><!-- FILTER_QUALITY --></div></div>
+        <div class="filter-row dialect-filters"><span class="filter-title" id="dialect-label">方言</span><div class="filters" role="group" aria-labelledby="dialect-label"><!-- FILTER_DIALECT --></div></div>
+        <p class="quality-guide">音质档位 <span>标准</span><b aria-hidden="true">↗</b><span>增强 <small>Enhanced</small></span><b aria-hidden="true">↗</b><span class="premium-guide">高品质 <small>Premium</small></span></p>
+      </div>
+      <div class="results-bar"><p id="result-count" class="result-count" role="status">{{COUNT}} 个声音，等你试听</p><button id="clear-filters" type="button" hidden>清除筛选 ×</button></div>
+      <div class="voice-grid"><!-- VOICE_CARDS --></div>
+      <div class="empty-state" hidden><span aria-hidden="true">(｡•́︿•̀｡)</span><h3>还没找到这个声音</h3><p>换个名字，或看看其他地区吧。</p><button type="button" id="reset-filters">看看全部声音 ↗</button></div>
+    </section>
+    <section class="end-note"><span aria-hidden="true">♡</span><p>声音选好了？<br><strong>告诉主播，今天就听你的。</strong></p><span aria-hidden="true">✦</span></section>
+  </main>
+  <footer><a class="brand" href="./">voices<span aria-hidden="true">♡</span></a><span>A LITTLE SOUND, A LOT OF VIBE.</span><a href="https://github.com/litomore-live/voices" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
+</body>
+</html>

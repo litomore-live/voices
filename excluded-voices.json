@@ -1,0 +1,21 @@
+{
+  "excludedVoiceIds": [
+    "eddy-chinese-china-mainland",
+    "eddy-chinese-taiwan",
+    "flo-chinese-china-mainland",
+    "flo-chinese-taiwan",
+    "grandma-chinese-china-mainland",
+    "grandma-chinese-taiwan",
+    "grandpa-chinese-china-mainland",
+    "grandpa-chinese-taiwan",
+    "reed-chinese-china-mainland",
+    "reed-chinese-taiwan",
+    "rocko-chinese-china-mainland",
+    "rocko-chinese-taiwan",
+    "sandy-chinese-china-mainland",
+    "sandy-chinese-taiwan",
+    "shelley-chinese-china-mainland",
+    "shelley-chinese-taiwan",
+    "yu-shu"
+  ]
+}
