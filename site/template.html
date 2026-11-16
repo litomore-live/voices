@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="给直播间挑一个喜欢的声音。点一下，听一听，找到你的心动音色。">
+  <meta name="description" content="给你发的弹幕挑个喜欢的声音。先试听，选好后把音色名字告诉主播，主播就会用这个音色朗读你发的弹幕。">
   <meta name="theme-color" content="#ff5bbd">
-  <title>Voices ♡ 选个心动的声音</title>
+  <title>Voices ♡ 给我的弹幕选个声音</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23ff5bbd'/%3E%3Ctext x='7' y='37' font-size='38' fill='%23251a40'%3E♥%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script defer src="player.js"></script>
@@ -13,16 +13,16 @@
 <body>
   <header class="site-header">
     <a class="brand" href="./">voices<span aria-hidden="true">♡</span></a>
-    <span class="header-note"><span class="tiny-star" aria-hidden="true">✦</span> 给直播间加点声音</span>
+    <span class="header-note"><span class="tiny-star" aria-hidden="true">✦</span> 给你的弹幕选个声音</span>
     <a class="header-button" href="#voices">去选声音 <span aria-hidden="true">↗</span></a>
   </header>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <span class="eyebrow"><span aria-hidden="true">♥</span> YOUR VOICE, YOUR VIBE</span>
-        <h1 id="hero-title">今天，想用<br><span>哪种声音？<svg class="title-star" viewBox="0 0 64 64" aria-hidden="true"><path d="m32 0 8 24 24 8-24 8-8 24-8-24L0 32l24-8Z"/></svg></span></h1>
-        <p>可爱一点，特别一点，随你喜欢。<br>点一下听听，选好就告诉主播 ♡</p>
-        <a class="hero-button" href="#voices">找到我的声音 <span aria-hidden="true">↓</span></a>
+        <h1 id="hero-title">你的弹幕，<br><span>你来选声音<svg class="title-star" viewBox="0 0 64 64" aria-hidden="true"><path d="m32 0 8 24 24 8-24 8-8 24-8-24L0 32l24-8Z"/></svg></span></h1>
+        <p>先试听，选好后把音色名字告诉主播。<br>主播会用这个音色，读出你发的弹幕 ♡</p>
+        <a class="hero-button" href="#voices">给我的弹幕选声音 <span aria-hidden="true">↓</span></a>
         <span class="hero-caption">{{COUNT}} 个声音 · 等你翻牌</span>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -54,7 +54,7 @@
       <div class="voice-grid"><!-- VOICE_CARDS --></div>
       <div class="empty-state" hidden><span aria-hidden="true">(｡•́︿•̀｡)</span><h3>还没找到这个声音</h3><p>换个名字，或看看其他地区吧。</p><button type="button" id="reset-filters">看看全部声音 ↗</button></div>
     </section>
-    <section class="end-note"><span aria-hidden="true">♡</span><p>声音选好了？<br><strong>告诉主播，今天就听你的。</strong></p><span aria-hidden="true">✦</span></section>
+    <section class="end-note"><span aria-hidden="true">♡</span><p>选好后，把音色名字告诉主播。<br><strong>你发的弹幕，用你选的声音读。</strong></p><span aria-hidden="true">✦</span></section>
   </main>
   <footer><a class="brand" href="./">voices<span aria-hidden="true">♡</span></a><span>A LITTLE SOUND, A LOT OF VIBE.</span><a href="https://github.com/litomore-live/voices" target="_blank" rel="noopener noreferrer">GitHub ↗</a></footer>
 </body>
