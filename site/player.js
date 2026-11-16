@@ -1,8 +1,8 @@
 const cards = [...document.querySelectorAll('.voice-card')];
 const search = document.querySelector('#search');
 const filters = [...document.querySelectorAll('.filter')];
-const dimensions = ['region', 'quality', 'dialect'];
-const selection = { region: 'all', quality: 'all', dialect: 'all' };
+const dimensions = ['series', 'region', 'quality', 'dialect'];
+const selection = { series: 'all', region: 'all', quality: 'all', dialect: 'all' };
 
 function stopAudio(audio) {
   audio.pause();
@@ -65,7 +65,11 @@ function filterCards() {
   document.querySelector('.empty-state').hidden = count !== 0;
   document.querySelector('#clear-filters').hidden = !query && dimensions.every(dimension => selection[dimension] === 'all');
 }
-for (const filter of filters) filter.addEventListener('click', () => { selection[filter.dataset.dimension] = filter.dataset.value; filterCards(); });
+for (const filter of filters) filter.addEventListener('click', () => {
+  const { dimension, value } = filter.dataset;
+  selection[dimension] = dimension === 'series' && selection[dimension] === value ? 'all' : value;
+  filterCards();
+});
 search.addEventListener('input', filterCards);
 function resetFilters() {
   for (const dimension of dimensions) selection[dimension] = 'all';

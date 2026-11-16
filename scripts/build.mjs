@@ -1,5 +1,5 @@
 import { cp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
-import { loadVoices, escapeHtml, regionOf, qualityOf, dialectOf, REGIONS, QUALITIES, DIALECTS } from './voices.mjs';
+import { loadVoices, escapeHtml, seriesOf, regionOf, qualityOf, dialectOf, SERIES, REGIONS, QUALITIES, DIALECTS } from './voices.mjs';
 import { generateReadme } from './generate-readme.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -10,7 +10,7 @@ const cards = voices.map((voice, index) => {
   const region = regionOf(voice);
   const quality = qualityOf(voice);
   const dialect = dialectOf(voice);
-  return `<article class="voice-card" data-region="${region.id}" data-quality="${quality.id}" data-dialect="${dialect.id}" data-search="${e(`${voice.displayName} ${voice.name} ${region.label} ${quality.label} ${quality.english} ${dialect.label}`.toLowerCase())}" id="${e(voice.id)}">
+  return `<article class="voice-card" data-series="${seriesOf(voice).id}" data-region="${region.id}" data-quality="${quality.id}" data-dialect="${dialect.id}" data-search="${e(`${voice.displayName} ${voice.name} ${region.label} ${quality.label} ${quality.english} ${dialect.label}`.toLowerCase())}" id="${e(voice.id)}">
     <div class="card-top"><span class="voice-number">VOICE / ${String(index + 1).padStart(2, '0')}</span><span class="region-dot">${region.label}</span></div>
     <div class="voice-heading"><h3>${e(voice.displayName)}</h3><span class="sparkle" aria-hidden="true">✦</span></div>
     <div class="voice-meta"><span>${e(voice.name.split(' (')[0])}</span></div>
@@ -25,8 +25,8 @@ const cards = voices.map((voice, index) => {
 }).join('\n');
 let page = await readFile(new URL('site/template.html', root), 'utf8');
 page = page.replaceAll('{{COUNT}}', String(voices.length)).replace('<!-- VOICE_CARDS -->', cards);
-for (const [dimension, options, metadata] of [['region', REGIONS, regionOf], ['quality', QUALITIES, qualityOf], ['dialect', DIALECTS, dialectOf]]) {
-  const all = { id: 'all', label: '全部' };
+for (const [dimension, options, metadata] of [['series', SERIES, seriesOf], ['region', REGIONS, regionOf], ['quality', QUALITIES, qualityOf], ['dialect', DIALECTS, dialectOf]]) {
+  const all = { id: 'all', label: dimension === 'series' ? '全部声音' : '全部' };
   const buttons = [all, ...options].map(option => {
     const count = option.id === 'all' ? voices.length : voices.filter(voice => metadata(voice).id === option.id).length;
     return `<button type="button" class="filter${option.id === 'all' ? ' active' : ''}" data-dimension="${dimension}" data-value="${option.id}" aria-pressed="${option.id === 'all'}">${option.label} <span data-count>${count}</span></button>`;

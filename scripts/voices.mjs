@@ -2,6 +2,8 @@ import { readFile, access } from 'node:fs/promises';
 
 export const root = new URL('../', import.meta.url);
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+export const SERIES = [{ id: 'siri', label: 'Siri' }];
+export const seriesOf = voice => ({ id: voice.id.startsWith('siri-') ? 'siri' : 'other' });
 export const REGIONS = [
   { id: 'mainland', label: '大陆' },
   { id: 'taiwan', label: '台湾' },

@@ -7,9 +7,12 @@
 @media(max-width:480px){.voice-grid{grid-template-columns:1fr}.voice-card{padding:24px 23px 20px}.voice-heading h3{font-size:32px}.greeting{font-size:12px;margin:20px 0}.card-top{margin-bottom:16px}.play-button{padding:13px;font-size:12px}.play-label{font-size:12px}.mini-wave{gap:3px}.mini-wave i{width:3px}.hero h1{font-size:48px}.hero-art{min-height:285px}.big-wave{gap:6px}.window-bar{font-size:9px}.window-bottom{font-size:9px}.filter{padding:8px 10px}.section-heading .eyebrow{font-size:8px;letter-spacing:1.3px}.count-sticker{font-size:9px;padding:9px}.end-note strong{font-size:16px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
-/* Composable region, quality and dialect filters. */
+/* Composable series, region, quality and dialect filters. */
 .filter-row { display: flex; align-items: flex-start; gap: 14px; min-width: 0; }
 .filter-title { flex: 0 0 26px; padding-top: 10px; font-size: 12px; font-weight: 750; letter-spacing: 1px; }
+.series-filters { margin-bottom: 17px; }
+.series-filters .filter[data-value="siri"]:not(.active):not(:disabled) { background: #ece1ff; border-color: #ceb5fa; color: #6036a5; }
+.series-filters .filter[data-value="siri"]:not(.active):not(:disabled):hover { border-color: var(--purple); }
 .filter-panel { display: grid; gap: 14px; margin-top: 17px; padding: 18px; background: #f4eafd80; border: 1px solid #e6d4f0; border-radius: 10px; }
 .filter-panel .filter { background: #fffaff; }
 .filter-panel .filter.active { background: var(--ink); }
