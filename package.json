@@ -11,8 +11,9 @@
     "voices": "node bin/voices.mjs --voices",
     "test": "node --test",
     "generate": "node scripts/generate-readme.mjs",
+    "generate:audio": "node scripts/generate-audio.mjs",
     "build": "node scripts/build.mjs",
-    "preview": "python3 -m http.server 8766 --directory dist --bind 127.0.0.1"
+    "preview": "node scripts/preview.mjs"
   },
   "engines": {
     "node": ">=24"

@@ -76,7 +76,9 @@ npm run preview
 
 打开 http://localhost:8766 预览。构建会从 JSON 生成网页和 README 表格，输出目录为 `dist/`。仅生成 README 时运行 `npm run generate`。
 
-在安装了对应语音的 Mac 上运行 `python3 scripts/generate.py`，可以通过本项目的 CLI 重新生成 MP3、更新时长及 README；需要 Python 3、FFmpeg、Node 和 Swift。只生成部分样本时可运行 `python3 scripts/generate.py --only siri-zh-cn-2 siri-yue-hk-2`。现有与新加入的音色均优先通过精确系统 ID 生成，保证网页试听与配置指定同一个声音。
+所有维护脚本统一使用 Node.js 24+，无需 Python。本地预览只需要 Node；生成音频还需要 FFmpeg（含 `ffprobe`）和 Swift。
+
+在安装了对应语音的 Mac 上运行 `npm run generate:audio`，可以通过本项目的 CLI 重新生成 MP3、更新时长及 README。只生成部分样本时可运行 `npm run generate:audio -- --only siri-zh-cn-2 siri-yue-hk-2`。现有与新加入的音色均优先通过精确系统 ID 生成，保证网页试听与配置指定同一个声音。
 
 页面样式和交互位于 `site/`。网站使用原生 HTML、CSS 和 JavaScript，无第三方运行时依赖。
 
